@@ -1,9 +1,22 @@
 //Accepts two parameters
 //Pushes newName to end of lineArray
 //Returns welcome string with interpolated newName an  position in line
-function takeANumber(lineArray, newName) {
+//Assigns a number to a customer as opposed to taking newName
+//Number will start at 0 and will increment everytime it runs
+//Push the customers to the end the array
+//A return statement with each one 
+
+/* function takeANumber(lineArray, newName) {
   lineArray.push(newName);
   return `Welcome, ${newName}. You are number ${lineArray.length} in line.`;
+} */ 
+
+let newNumber = 0
+
+function takeANumber(lineArray) {
+var newNumber = newNumber++; 
+lineArray.push(newNumber);
+return `Welcome! You are number ${newNumber} in line`
 }
 
 //Accepts current line
